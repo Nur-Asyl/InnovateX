@@ -1,0 +1,109 @@
+/* Red background for the entire page */
+body {
+  background-color: black;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Style for the search container */
+.search-container {
+  background-color: black;
+  padding: 0px;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Style for the search input */
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+/* Style for the shop listings */
+.shop-listings {
+  margin: 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+/* Style for each shop listing */
+.shop-listing {
+  font-size: medium;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid white; /* Add a black border */
+  margin: 10px;
+  width: calc(33.33% - 20px); /* Three columns with spacing */
+  box-sizing: border-box;
+   /* Add a blur effect to the columns */
+  transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+/* Style for the shop image */
+.shop-listing img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50px;
+  background-size: cover;
+  border: 2px solid white; /* Add a black border */
+}
+
+/* Style for the exit button */
+.exit-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 1px solid black; /* Add a black border */
+}
+
+/* Hover effect for shop listings */
+.shop-listing:hover {
+  transform: scale(1.05); /* Enlarge the shop listing on hover */
+}
+
+/* Style for the virtual keyboard */
+.virtual-keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style for each keyboard key */
+.keyboard-key {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Special style for the Delete key */
+.keyboard-key.delete {
+  background-color: red;
+  border: 1px solid red;
+}
+
+/* Style for the search button on the keyboard */
+.keyboard-key.search {
+  background-color: red;
+  border: 1px solid red;
+  font-weight: bold;
+}
